@@ -6,7 +6,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lundefuld.dk - plakater</title>
   </head>
-  <body>
+  <body class="">
+    <!-- cookieboks -->
+    <div
+      id="cookieboks"
+      class="grid justify-items-center self-center bg-gray-800 p-5"
+    >
+      <h2 class="text-white">Cookies</h2>
+      <div class="grid max-w-xl justify-center gap-4">
+        <p class="text-white">
+          Vi benytter cookies og ønkser dit samtykke til at anvende og indsamle
+          data. Hvis du vil vide mere om det, kan du læse mere om vores
+          cookiepolitik
+          <a href="" class="hover:text-green-400">her</a>...
+        </p>
+
+        <form
+          action="/action_page.php"
+          class="grid gap-2 text-white lg:grid-cols-4"
+        >
+          <div>
+            <input type="checkbox" id="nodvendig" />
+            <label for="nodvendig"> Nødvendige</label>
+          </div>
+          <div>
+            <input type="checkbox" id="preferencer" />
+            <label for="preferencer"> Præferencer</label>
+          </div>
+          <div>
+            <input type="checkbox" id="statistik" />
+            <label for="statistik"> Statistik</label>
+          </div>
+          <div>
+            <input type="checkbox" id="marketing" />
+            <label for="marketing"> Marketing</label>
+          </div>
+        </form>
+
+        <div class="grid gap-4 lg:grid-cols-3">
+          <button id="accepter" class="bg-slate-100 p-2">
+            <p>Accepter</p>
+          </button>
+          <button id="tillad" class="bg-slate-100 p-2">
+            <p>Tillad valgte</p>
+          </button>
+          <button id="afvis" class="bg-slate-100 p-2"><p>Afvis</p></button>
+        </div>
+      </div>
+    </div>
+    <!-- cookieboks slut-->
     <!-- Navigation -->
     <div class="">
       <div>
@@ -583,7 +631,7 @@
     <footer class="bg-gray-800">
       <div class="container mx-auto py-16 px-4 sm:px-6 lg:px-12 xl:px-20">
         <div
-          class="grid grid-cols-2 gap-4 md:grid-cols-3 md:gap-8 lg:grid-cols-3 xl:grid-cols-4"
+          class="grid grid-cols-2 gap-4 md:grid-cols-3 md:gap-8 lg:grid-cols-3 xl:grid-cols-5"
         >
           <div class="flex flex-shrink-0 flex-col">
             <div class="font-bold text-white">Lunefuld.dk</div>
@@ -667,6 +715,21 @@
               href="javascript:void(0)"
               class="mt-6 cursor-pointer text-base leading-4 text-white hover:text-gray-500 focus:underline focus:outline-none"
               >Handelsbetingelser</a
+            >
+          </div>
+          <div class="flex flex-col">
+            <h2 class="text-base font-bold leading-4 text-white">
+              Cookie- og pritvatlivspolitik
+            </h2>
+            <a
+              href="javascript:void(0)"
+              class="mt-6 cursor-pointer text-base leading-4 text-white hover:text-gray-500 focus:underline focus:outline-none"
+              >Cookiepolitik</a
+            >
+            <a
+              href="javascript:void(0)"
+              class="mt-6 cursor-pointer text-base leading-4 text-white hover:text-gray-500 focus:underline focus:outline-none"
+              >Privatlivspolitik</a
             >
           </div>
           <div class="hidden lg:block">
